@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Celestial Glow</string>
+    <string name="back">ย้อนกลับ</string>
+    <string name="switch_camera">สลับกล้อง</string>
+</resources>

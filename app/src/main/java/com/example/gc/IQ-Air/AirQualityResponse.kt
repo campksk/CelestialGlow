@@ -4,9 +4,9 @@ data class AirQualityResponse(
 )
 
 data class AirData(
-    val city: String,
+    /*val city: String,
     val state: String,
-    val country: String,
+    val country: String,*/
     val current: CurrentData
 )
 

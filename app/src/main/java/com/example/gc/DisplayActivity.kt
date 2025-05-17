@@ -90,7 +90,9 @@ class DisplayActivity : AppCompatActivity() {
                     val phase = moonData?.moon?.phase
                     val phase_name = moonData?.moon?.phase_name
                     val emoji = moonData?.moon?.emoji
-                    MoonTextView.text = "Moon: $phase $phase_name $emoji"
+                    val illumination = moonData?.moon?.illumination
+                    val distance = moonData?.moon?.detailed?.position?.distance
+                    MoonTextView.text = "Phase name: $phase_name $emoji\nPhase: $phase\nIllumination: $illumination\nDistance: $distance km"
                 } else {
                     MoonTextView.text = "Error: ${response.code()}"
                 }
